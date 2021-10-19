@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <ul>
+    <% for(var i=0; i<products.length; i++){ %>
+       
+      <a href="./product?id=<%= products[i].id %>"> <li><%= products[i].name %></li></a> 
+    
+    <% } %>
+</ul>
+  </body>
+</html>

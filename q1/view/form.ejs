@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        table {
+                position: relative;
+                top: 400px;
+            }
+        </style>
+  </head>
+  <body>
+    <form method="post">
+        <label>key</label>
+        <input type="text" name="key" ></input></br>
+        <label>value</label>
+        <input type="text" name="value" /></input></br>
+        <input type="submit" name="submit" text="submit"></input>
+    </form>
+
+
+   
+    <table >
+        <tr>
+        <th>key</th>
+        <th>value</th>
+        </tr>
+        <% for(const key in cookie){ %>
+        <tr>
+      <td><%= key %></td>
+      <td><%= cookie[key]  %></td>
+    </tr>
+    <% }%>
+    </table>
+   
+  </body>
+</html>
